@@ -17,8 +17,8 @@ addpath('D:\MEGAFile\work\Celldata');
 % add your code path here.
 load('2circles_noise.mat');% load your datasets.
 %% ##########parameters setting###################
-gamma=0.1% contral   rho
-theta=2;% contral  delta
+gamma=0.1% control   rho
+theta=2;% control  delta
 lamda=3;% select representive points
 percent  =2;% parameter pct
 %% main process
