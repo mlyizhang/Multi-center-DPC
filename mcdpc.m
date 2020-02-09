@@ -17,8 +17,8 @@ addpath('D:\MEGAFile\work\Celldata');
 % add your code path here.
 load('2circles_noise.mat');% load your datasets.
 %% ##########parameters setting###################
-gamma=0.1% contral delta
-theta=2;% contral rho
+gamma=0.1% contral   rho
+theta=2;% contral  delta
 lamda=3;% select representive points
 percent  =2;% parameter pct
 %% main process
@@ -29,7 +29,7 @@ fprintf('average percentage of neighbours (hard coded): %5.6f\n', percent);
 fprintf('Computing Rho with gaussian kernel of radius: %12.6f\n', dc);
 rhos = getLocalDensity(distset, dc);%
 [deltas, nneigh] = getDistanceToHigherDensity(distset, rhos);% 
-D=[rhos' deltas'];%D¡£
+D=[rhos' deltas'];%DÂ¡Â£
 a=D(:,1);
 b=D(:,2);
 outvalue=min(a)+0.1*(max(a)-min(a));
@@ -46,7 +46,7 @@ k=0;
 Y2=0;
 same=0;
 res=find(marginb==0);
-D=[rhos' deltas'];%D is decision graph¡£
+D=[rhos' deltas'];%D is decision graphÂ¡Â£
  r=D(:,1);
  d=D(:,2);
 tempcluster=find (d>lamda);
